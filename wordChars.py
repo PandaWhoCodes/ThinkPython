@@ -6,5 +6,5 @@ with open('words.txt', 'r') as wd:
     wordList = wd.read().split()
 
 for words in wordList:
-    if(len(words)>20):
-        print(words+" ")
+    if (len(words) > 20):
+        print(words + " ")
