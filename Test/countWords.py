@@ -6,12 +6,13 @@ Read test.txt  and count the number of words in the file and print the word coun
 
 def countWords():
     with open('test.txt') as text:
-        len = 0
-        for sentences in text:
-            for words in sentences:
-                len+=1
+        wordCount = 0
+        for lines in text:
+            text1 = lines.split()
+            wordCount = wordCount + len(text1)
             
-    print(len)
+            
+    print( wordCount )
 
 
 countWords()
