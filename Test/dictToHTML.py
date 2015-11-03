@@ -21,11 +21,7 @@ cnt = Counter(Text)
 def printItems(dictObj, indent):
     print('  ' * indent + '<html>\n<body>\n<ul>\n')
     for k, v in dictObj.items():
-        if isinstance(v, dict):
-            print('  ' * indent, '<li>', k, ':', '</li>')
-            printItems(v, indent + 1)
-        else:
-            print(' ' * indent, '<li>', k, ':', v, '</li>')
+        print(' ' * indent, '<li>', k, ':', v, '</li>')
     print('  ' * indent + '</ul>\n</body>\n</html>')
 
 
