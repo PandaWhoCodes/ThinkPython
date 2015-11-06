@@ -1,0 +1,10 @@
+wordfreqcloud3:
+Make the word cloud linked. When the user clicks on a word,
+show all the lines in the test.txt file that contains the word.
+
+Python File for creating the output. 
+https://github.com/ashsih101/ThinkPython/blob/master/Test/wordCloud2.py 
+
+
+Javascript:for the linking: 
+https://jsfiddle.net/qgkj9pxp/16/ 
