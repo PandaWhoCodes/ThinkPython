@@ -10,7 +10,6 @@ and return default. default defaults to None.
 
 hist = {1: 2, 3: 4, 5: 6, 7: 8}
 
-
 def invert_dict(d):
     inverse = {}
     for key, val in d.iteritems():
@@ -21,8 +20,8 @@ def invert_dict(d):
 if __name__ == '__main__':
     d = dict(a=1, b=2, c=3, z=1)
     inverse = invert_dict(d)
-    for val, keys in inverse.iteritems():
-        print val, keys
+    for val, keys in inverse.items():
+        print(val, keys)
 
 invert_dict(hist)
 my_invert(hist)
