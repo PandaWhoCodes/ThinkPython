@@ -11,7 +11,6 @@ noiseText = []
 with open('noise.txt') as noise:
     for lines in noise:
         noiseText = noiseText + lines.split()
-
 Text = []
 with open('test.txt') as text:
     for lines in text:
@@ -19,7 +18,10 @@ with open('test.txt') as text:
 cnt = Counter(Text)
 for word, count in cnt.items():
     if word in noiseText:
-        if count > 4:
-            cnt[word] = 4
+        cnt[word]=0
+        count=0
+    if count > 4:
+        cnt[word] = 4
 for word, count in cnt.items():
-    print(word + ": " + str(count))
+    if count!=0:
+        print(word + ": " + str(count))
