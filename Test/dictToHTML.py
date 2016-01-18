@@ -16,13 +16,15 @@ with open('test.txt') as text:
     for lines in text:
         Text = Text + re.findall(r"[\w']+", lines)
 cnt = Counter(Text)
-
-
+fname='python.html'
+myfile = open(fname,'r+')
 def printItems(dictObj, indent):
-    print('  ' * indent + '<html>\n<body>\n<ul>\n')
+    myfile.write('  ' * indent + '<html>\n<body>\n<ul>\n')
     for k, v in dictObj.items():
-        print(' ' * indent, '<li>', k, ':', v, '</li>')
-    print('  ' * indent + '</ul>\n</body>\n</html>')
+        myfile.write(' ' * indent, '<li>', k, ':', v, '</li>')
+    myfile.write('  ' * indent + '</ul>\n</body>\n</html>')
+    myfile.close()
 
 
 printItems(cnt, 0)
+
