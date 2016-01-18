@@ -4,21 +4,25 @@ dictionary. It doesn't matter what the values are.
 check whether a string is in the dictionary.
 """
 
+results = {}
 
-def str2dict(filename="test.txt"):
-    results = {}
-    count = 1
+
+def str2dict():
+    # count = 1
     with open('test.txt') as text:
         for line in text:
-            results[count] = line
-            count = count + 1
-    return results
+            for words in line.split():
+                results[words] = 'Dict'
 
 
-def checkData(myDict):
-    for i in range(1, len(myDict)+1):
-        if isinstance(myDict[i],str):
-            print("STR")
+def hasString():
+    for key, value in results.items():
+        try:
+            key = int(key)
+        except ValueError:
+            print('Dictionary contains a string')
+            return
 
 
-checkData(str2dict("test.txt"))
+str2dict()
+hasString()
