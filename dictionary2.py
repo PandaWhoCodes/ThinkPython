@@ -12,8 +12,9 @@ mydict = {'carl': 40,
 
 
 def print_hist():
-    for key in sorted(hist):
-        print(key)
+    myList = mydict.keys()
+    # Use of keys() function now for sorting the file 
+    print(myList)
     for key in sorted(mydict):
         print(key)
 
