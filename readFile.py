@@ -9,5 +9,5 @@ with open('test.txt') as text:
     for lines in text:
         Text = Text + re.findall(r"[\w']+", lines)
 
-for line in Text:
-    print(line.lower())
+for word in Text:
+    print(word.lower())
