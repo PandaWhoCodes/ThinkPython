@@ -107,3 +107,4 @@ eight_letters = filter_length(d, 8)
 print_anagram_sets_in_order(eight_letters)
 """
 my_anagrams("CAT")
+my_anagrams("MALAYAM")
