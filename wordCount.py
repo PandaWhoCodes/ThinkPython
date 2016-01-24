@@ -8,8 +8,8 @@ word = "banana"
 letter = "a"
 
 
-def count(word, letter):
+def countit(word, letter):
     return word.count(letter)
 
 
-print(count(word, letter))
+print(countit(word, letter))
