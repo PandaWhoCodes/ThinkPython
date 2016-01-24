@@ -1,3 +1,9 @@
+    """Computes the Ackermann function A(m, n)
+
+    See http://en.wikipedia.org/wiki/Ackermann_function
+
+    n, m: non-negative integers
+    """
 def ackermann(m, n):
     if m == 0:
         return n + 1
